@@ -1,0 +1,19 @@
+section.mb-5#custom-group
+    h3.mt-5.mb-3.mt-xl-0.mb-xl-2 Custom group
+    .row
+        .col-md-6.col-lg-4.mb-2.mb-md-0
+            .custom-group.custom-group-prepend
+                .custom-group-icon
+                    svg
+                        use(xlink:href="images/sprite_build.svg#lock")
+                input.form-control(placeholder="Placeholder")
+
+        .col-md-6.col-lg-4
+            .custom-group.custom-group-append
+                input.form-control(type="password" placeholder="Placeholder")
+                a.custom-group-icon.js-drop-eye(href="javascript: void(0);")
+                    .icon-eye
+                        svg.open
+                            use(xlink:href="images/sprite_build.svg#eye")
+                        svg.closed
+                            use(xlink:href="images/sprite_build.svg#eye-closed")

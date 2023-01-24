@@ -1,0 +1,28 @@
+// bootstrap
+@import 'custom';
+@import '~bootstrap/scss/bootstrap';
+
+// vendors
+@import '~choices.js/public/assets/styles/choices.min.css';
+@import "tech/vendor/yalb";
+
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'common';
+@import 'spacing';
+
+// tech layout
+@import 'tech/forms';
+@import 'tech/files-n-socs';
+@import 'tech/reaction';
+@import 'tech/tags';
+
+
+@import 'layout';
+
+// bem entities
+@import 'bems';
+@import 'header';
+@import 'action_page';
+@import 'footer'

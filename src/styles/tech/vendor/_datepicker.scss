@@ -1,0 +1,33 @@
+$today: #FD783E;
+
+.datepicker-wrapper {
+	position: relative;
+
+	.form-control {
+		padding-right: 2.5rem;
+	}
+
+	&::before {
+		display: inline-block;
+		content: '';
+		-webkit-mask-image:url('images/sprites/calendar.svg');
+		-webkit-mask-size: contain;
+		background-color: $primary;
+		width: 21px;
+		height: 21px;
+		position: absolute;
+		top: 50%;
+		right: .75rem;
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+}
+
+.container__main{
+	.day-item{
+		cursor: pointer !important;
+	}
+	.button-previous-month,.button-next-month{
+		cursor: pointer !important;
+	}
+}

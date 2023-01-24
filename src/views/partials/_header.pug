@@ -1,0 +1,182 @@
+header.header
+    .header__top
+        .container
+            .header__top-flex
+                a.header_mobileLogo(href="javascript:void(0)")
+                        img.header__logo(src="./images/logo.svg" alt="")   
+                .header__geo
+                    a.header__link(href="javascript:void(0)")
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#geoPin")
+                        span Рязань
+                    a.header__link(href="javascript:void(0)")
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#shopIcon")
+                        span Магазины
+                    a.header__link(href="javascript:void(0)")
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#purchasesIcon")
+
+                a.header__link.header__phone(href="tel:88000000000")
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#phoneIcon")
+                    span 8 (800) 000 00      
+    .header__bottom
+        .container 
+            .header__search-box
+                a.header__logo-link(href="javascript:void(0)")
+                    img.header__logo(src="./images/logo.svg" alt="")
+                button.header_burger.js-burger_open
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#burgerIcon")
+                form.header__serch
+                    button.header__submit(type="submit")
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#searchIcon")
+                    input(type="text" placeholder="Поиск среди товаров")
+                .header__clientLinks
+                    a.header__clientLink(href="javascript:void(0)")
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#personIcon")
+                        span Анастасия
+                    a.header__clientLink(href="javascript:void(0)")
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#purchasesIcon")
+                        span Покупки
+                    a.header__clientLink(href="javascript:void(0)")
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#heartIcon")
+                        span Избранное
+                    a.header__clientLink(href="javascript:void(0)")
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#basketIcon")
+                        span Корзина
+            nav.header__navigation.js-nav_controll
+                ul.header__navlist.js-nav_list
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)")
+                            svg 
+                                use(xlink:href="images/sprite_build.svg#percentIcon")
+                            | Акции
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)")
+                            | Смартфоны
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)")
+                            | Ноутбуки
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)") 
+                            | Телевизоры
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)") 
+                            | Видеотехника
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)") 
+                            | Планшеты
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)")
+                            | Наушники
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)") 
+                            | Гейминг
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)") 
+                            | Умные часы
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)") 
+                            | Портативная акустика
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)") 
+                            | Сетевое оборудование
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)")
+                            | Офисная техника
+                    li.header__navli
+                        a.header__navA(href="javascript:void(0)") 
+                            | Умный дом
+                .header__controlls 
+                    button.header__navSide.--left.js-controll_button.--invisible.js-left(data-side="left")
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#navArrowIcon")
+                    button.header__navSide.js-controll_button.js-right(data-side='right')
+                        svg 
+                            use(xlink:href="images/sprite_build.svg#navArrowIcon")
+    .header__catalog.js-header_burger 
+        button.header_burgerClose.js-burger_close
+            svg 
+                use(xlink:href="images/sprite_build.svg#mobileCloseIcon")
+        h2.header__mobileTitle Каталог
+        ul.header_catalogList 
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog1.png"  alt="")
+                    | Ноутбуки и аксессуары
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog2.png"  alt="")
+                    | Смартфоны и аксессуары
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog3.png"  alt="")
+                    | Телевизоры и аксессуары
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog4.png"  alt="")
+                    | Фото и видеотехника
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog5.png"  alt="")
+                    | Планшеты и аксессуары
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog6.png"  alt="")
+                    | Наушники и аудиотехника
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog7.png"  alt="")
+                    | Гейминг
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog8.png"  alt="")
+                    | Умные часы
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog9.png"  alt="")
+                    | Портативная акустика
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog10.png"  alt="")
+                    | Сетевое оборудование
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog11.png"  alt="")
+                    | Офисная техника
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+            li.header_catalogLi 
+                a.header_catalogA(href="javascript:void(0)")
+                    img.header_catalogImg(src="./images/catalog12.png"  alt="")
+                    | Умный дом
+                    svg 
+                        use(xlink:href="images/sprite_build.svg#catalog_arrow")
+

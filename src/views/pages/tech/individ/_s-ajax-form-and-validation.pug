@@ -1,0 +1,30 @@
+section.pb-5#ajax
+    h3.mt-5.mb-3.mt-xl-0.mb-xl-2 ajax форма и валидация
+    .row
+        .col-lg-8
+            form.js-ajax-form#test(action="/ajaxTest.html" method="GET")
+                .mb-3
+                    label.form-label ИНН
+                    input.form-control(data-validate="inn" placeholder="ИНН")
+                    .feedback
+                .mb-3
+                    label.form-label КПП
+                    input.form-control(data-validate="kpp" placeholder="КПП")
+                    .feedback
+                .mb-3
+                    label.form-label Email
+                    input.form-control(data-validate="email" aria-describedby="emailHelp" placeholder="email")
+                    .feedback
+                .mb-3
+                    label.form-label Набор из букв и цифр (латиница)
+                    input.form-control(data-validate="lat" placeholder="Набор из букв и цифр (латиница)")
+                    .feedback
+                .mb-3
+                    label.form-label Набор из букв и цифр (латиница + кириллица)
+                    input.form-control(data-validate="cyr-lat" placeholder="Набор из букв и цифр (латиница + кириллица)")
+                    .feedback
+                .mb-3
+                    label.form-label Номер телефона
+                    input.form-control(data-validate="tel" placeholder="+7 (___) ___-__-__")
+                    .feedback
+                button.btn.btn-primary(type="submit") Отправить

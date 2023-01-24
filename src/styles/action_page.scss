@@ -1,0 +1,48 @@
+.action_page {
+    margin-top: 36px;
+
+    @media(max-width:767px) {
+        margin-top: 25px;
+    }
+}
+
+.action__image {
+    border-radius: 40px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.action__poster {
+    max-width: 100%;
+    height: auto;
+}
+
+.action_text {
+    margin-top: 36px;
+
+
+}
+
+.action_text__description {
+    margin-top: 24px;
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+.action_text__subtitle {
+    display: inline-block;
+    margin-top: 18px;
+    color: $font-color2;
+    font-size: 22px;
+    line-height: 25px;
+
+    @media(max-width:767px) {
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 12px;
+    }
+}

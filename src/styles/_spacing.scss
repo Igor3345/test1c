@@ -1,0 +1,108 @@
+
+$screen-map: (
+		xs: $screen-xs,
+		sm: $screen-sm,
+		md: $screen-md,
+		lg: $screen-lg,
+		xl: $screen-xl,
+		xxl: $screen-xxl,
+);
+
+$screens: (
+		xs: (xss: 10, xs: 15, s: 20, m: 30, l: 40, xl: 60, xxl: 80,), //screen > 320
+		sm: (xss: 10, xs: 15, s: 20, m: 30, l: 40, xl: 60, xxl: 80,), //screen > 576
+		md: (xss: 10, xs: 20, s: 30, m: 40, l: 50, xl: 70, xxl: 90,), //screen > 768
+		lg: (xss: 10, xs: 20, s: 30, m: 40, l: 60, xl: 80, xxl: 120,), //screen > 992
+		xl: (xss: 10, xs: 20, s: 30, m: 40, l: 60, xl: 80, xxl: 120,), //screen > 1200
+		xxl: (xss: 10, xs: 20, s: 30, m: 40, l: 60, xl: 80, xxl: 185,), //screen > 1400
+);
+@each $name, $spacings in $screens {
+	@media (min-width: map-get($screen-map, $name)) {
+		@each $name, $spacing in $spacings {
+			.m-#{$name} {
+				margin: $spacing + px!important;
+			}
+			.m-x-#{$name} {
+				margin: $spacing + px 0!important;
+			}
+			.m-y-#{$name} {
+				margin: 0 $spacing + px!important;
+			}
+			.m-t-#{$name} {
+				margin-top: $spacing + px!important;
+			}
+			.m-r-#{$name} {
+				margin-right: $spacing + px!important;
+			}
+			.m-b-#{$name} {
+				margin-bottom: $spacing + px!important;
+			}
+			.m-l-#{$name} {
+				margin-left: $spacing + px!important;
+			}
+			.p-#{$name} {
+				padding: $spacing + px!important;
+			}
+			.p-x-#{$name} {
+				padding: $spacing + px 0!important;
+			}
+			.p-y-#{$name} {
+				padding: 0 $spacing + px!important;
+			}
+			.p-t-#{$name} {
+				padding-top: $spacing + px!important;
+			}
+			.p-r-#{$name} {
+				padding-right: $spacing + px!important;
+			}
+			.p-b-#{$name} {
+				padding-bottom: $spacing + px!important;
+			}
+			.p-l-#{$name} {
+				padding-left: $spacing + px!important;
+			}
+			.m-n-#{$name} {
+				margin: -$spacing + px!important;
+			}
+			.m-x-n-#{$name} {
+				margin: -$spacing + px 0!important;
+			}
+			.m-y-n-#{$name} {
+				margin: 0 -$spacing + px!important;
+			}
+			.m-t-n-#{$name} {
+				margin-top: -$spacing + px!important;
+			}
+			.m-r-n-#{$name} {
+				margin-right: -$spacing + px!important;
+			}
+			.m-b-n-#{$name} {
+				margin-bottom: -$spacing + px!important;
+			}
+			.m-l-n-#{$name} {
+				margin-left: -$spacing + px!important;
+			}
+			.p-n-#{$name} {
+				padding: -$spacing + px!important;
+			}
+			.p-x-n-#{$name} {
+				padding: -$spacing + px 0!important;
+			}
+			.p-y-n-#{$name} {
+				padding: 0 -$spacing + px!important;
+			}
+			.p-t-n-#{$name} {
+				padding-top: -$spacing + px!important;
+			}
+			.p-r-n-#{$name} {
+				padding-right: -$spacing + px!important;
+			}
+			.p-b-n-#{$name} {
+				padding-bottom: -$spacing + px!important;
+			}
+			.p-l-n-#{$name} {
+				padding-left: -$spacing + px!important;
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+.gallery {
+	display: block;
+	border-radius: $border-radius;
+	overflow: hidden;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		background-color: #000;
+		transition: opacity $transition;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		background-image: url(./images/loupe.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		width: 57px;
+		height: 56px;
+	}
+
+	&:hover::before {
+		opacity: .2;
+	}
+
+	&:hover::after {
+		opacity: 1;
+	}
+}
+
+.video-gallery {
+	display: block;
+	position: relative;
+
+	&::before {
+		content: '';
+		width: 240px;
+		height: 240px;
+		border-radius: 50%;
+		background-color: $body-color;
+		opacity: .5;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		@media (max-width: $screen-md - 1) {
+			width: 120px;
+			height: 120px;
+		}
+	}
+
+	&::after {
+		content: '';
+		font-size: 192px;
+		color: $white;
+		position: absolute;
+		background-image: url(./images/loupe.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: color $transition;
+
+		@media (max-width: $screen-md - 1) {
+			font-size: 96px;
+		}
+	}
+
+	&:hover {
+		&::after {
+			color: #FF9B06;
+		}
+	}
+}

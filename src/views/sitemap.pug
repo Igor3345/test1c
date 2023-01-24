@@ -1,0 +1,15 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'sitemap.html'
+		};
+
+block main
+	section.py-5
+		.container
+			h2.mt-0.mb-4 Карта сайта
+			ol
+				li: a(href="/" target="_blank") Главная
+				li: a(href="tech.html" target="_blank") Техническая

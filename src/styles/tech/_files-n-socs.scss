@@ -1,0 +1,63 @@
+.file-icons {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+.file-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+  fill: $primary;
+
+  &:hover {
+    fill: $link-hover-color;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.socs {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+a.soc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  background: transparent;
+  fill: $icon-color;
+  padding: 10px;
+  transition: background-color $transition;
+  border-radius: 50%;
+  border: 1px solid $icon-color;
+  transition: all $transition;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    transition: all $transition;
+  }
+
+  &:hover {
+    border-color: $hover-color;
+    transition: all $transition;
+
+    svg {
+      fill: $hover-color;
+      transition: all $transition;
+    }
+
+    ;
+  }
+}

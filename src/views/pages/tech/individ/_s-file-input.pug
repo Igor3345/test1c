@@ -1,0 +1,17 @@
+section.mb-5#file-input
+    h3.mt-5.mb-3.mt-xl-0.mb-xl-2 File input
+    .row
+        .col-md-6.col-lg-4.mb-2.mb-md-0
+                label.form-label(for="customFile") File browser
+                .form-file
+                    input#customFile.form-file-input(type="file")
+                    label.form-file-label(for="customFile")
+                        span.form-file-text Выбрать файл
+                        span.form-file-button Просматривать
+        .col-md-6.col-lg-4
+                label.form-label(for="customFileMultiple") File browser multiple
+                .form-file
+                    input#customFileMultiple.form-file-input(type="file" multiple)
+                    label.form-file-label(for="customFileMultiple")
+                        span.form-file-text Выбрать файл
+                        span.form-file-button Просматривать

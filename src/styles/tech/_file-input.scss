@@ -1,0 +1,67 @@
+.form-file {
+  --bs-form-file-height: 38px;
+  position: relative;
+}
+
+.form-file-input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: var(--bs-form-file-height);
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &[disabled] ~ .form-file-label,
+  &:disabled ~ .form-file-label{
+    cursor: default;
+  }
+
+  &[disabled] ~ .form-file-label .form-file-text,
+  &:disabled ~ .form-file-label .form-file-button{
+    background-color: #e9ecef;
+    border-color: #ced4da;
+  }
+}
+
+.form-file-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  height: var(--bs-form-file-height);
+  border-color: #ced4da;
+  cursor: pointer;
+}
+
+.form-file-text {
+  display: block;
+  flex-grow: 1;
+  padding: 8.5px 7px;
+  overflow: hidden;
+  line-height: 1;
+  color: #495057;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: $white;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 0 0 5px;
+}
+
+.form-file-button {
+  display: block;
+  flex-shrink: 0;
+  padding: 6px 12px;
+  margin-left: -1px;
+  color: #495057;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0 5px 5px 0;
+}
+

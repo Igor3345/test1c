@@ -1,0 +1,33 @@
+section.mb-5#select
+    h3.mt-5.mb-3.mt-xl-0.mb-xl-2  Select
+
+    .row.mb-3
+        .col-md-6.col-lg-4.mb-2.mb-md-0
+            label.form-label Select
+            select.js-select
+                - let n = 0;
+                while n++ < 15
+                    option= "Значение " + n
+
+
+        .col-md-6.col-lg-4
+            label.form-label Select Disabled
+            select.js-select(disabled)
+                - let m = 0;
+                while m++ < 10
+                    option= "Значение " + m
+
+    .row.mb-3
+        .col-md-6.col-lg-4.mb-2.mb-md-0
+            label.form-label Multiselect
+            select.js-select(multiple)
+                - let k = 0;
+                while k++ < 10
+                    option= "Значение " + k
+
+        .col-md-6.col-lg-4
+            label.form-label Multiselect Disabled
+            select.js-select(multiple disabled)
+                - let l = 0;
+                while l++ < 10
+                    option= "Значение " + l

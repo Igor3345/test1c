@@ -1,0 +1,127 @@
+.counter {
+  display: inline-block;
+  width: 95px;
+  position: relative;
+  user-select: none;
+
+  &-input {
+    padding: 7px 30px;
+    text-align: center;
+  }
+
+  &-minus,
+  &-plus {
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+
+    &:hover {
+      ~ .counter-input {
+        border-color: $primary;
+      }
+    }
+
+    &::before {
+      display: inline-block;
+      content: '';
+      width: 14px;
+      height: 2px;
+      background: $primary;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &-minus {
+    left: 0;
+  }
+
+  &-plus {
+    right: 0;
+
+    &::after {
+      display: inline-block;
+      content: '';
+      width: 14px;
+      height: 2px;
+      background: $primary;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+}
+//
+.custom-group {
+  position: relative;
+
+  &-prepend {
+    .form-control {
+      padding-left: 2.5rem;
+    }
+
+    .custom-group-icon {
+      left: 1px;
+      svg{
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  &-append {
+    .form-control {
+      padding-right: 2.5rem;
+    }
+
+    .custom-group-icon {
+      right: 1px;
+      .icon-eye{
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        .closed{
+          display: none;
+        }
+      }
+      .icon-eye-closed{
+        .open{
+          display: none;
+        }
+        .closed{
+          display: block;
+        }
+      }
+      &:hover{
+        fill: $primary;
+      }
+
+    }
+  }
+
+  &-icon {
+    height: calc(100% - 2px);
+    width: 2.5rem;
+    font-size: 18px;
+    fill: $secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+}
+
+
+@import "file-input";
+@import 'vendor/choices';
+@import 'vendor/datepicker';
